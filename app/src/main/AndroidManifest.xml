@@ -9,14 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Miwokapp">
-        <activity android:name=".phrasesActivity"
-            android:label="Phrases"/>
-        <activity android:name=".familyActivity"
-            android:label="Family Activity"/>
-        <activity android:name=".colorsActivity"
-            android:label="Colors"/>
-        <activity android:name=".numbersActivity"
-            android:label="Numbers"/>
+        <activity
+            android:name=".numbersActivity"
+            android:label="Numbers"></activity>
+        <activity
+            android:name=".phrasesActivity"
+            android:label="Phrases" />
+        <activity
+            android:name=".familyActivity"
+            android:label="Family Activity" />
+        <activity
+            android:name=".colorsActivity"
+            android:label="Colors" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
