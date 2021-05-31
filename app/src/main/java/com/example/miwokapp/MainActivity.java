@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(numbersIntent);
             }
         });
+//        update check
         TextView family = (TextView) findViewById(R.id.family);
         family.setOnClickListener(new View.OnClickListener() {
             @Override
