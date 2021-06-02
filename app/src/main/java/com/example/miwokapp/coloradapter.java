@@ -1,5 +1,6 @@
 package com.example.miwokapp;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,10 +12,14 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class WordAdapter extends ArrayAdapter<word> {
-    public WordAdapter(numbersActivity numbersActivity, ArrayList<word> numbersarray) {
-        super(numbersActivity,0,numbersarray);
+public class coloradapter extends ArrayAdapter {
+
+
+
+    public coloradapter(colorsActivity colorsActivity, ArrayList<colors> colorsarray) {
+        super(colorsActivity,0,colorsarray);
     }
 
     @NonNull
@@ -26,7 +31,7 @@ public class WordAdapter extends ArrayAdapter<word> {
                     R.layout.list_item, parent, false);
         }
         // Get the {@link AndroidFlavor} object located at this position in the list
-        word currentword = (word) getItem(position);
+        colors currentword = (colors) getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID version_name
         TextView defaultTextView = (TextView) listItemView.findViewById(R.id.defaultlang);
@@ -47,6 +52,5 @@ public class WordAdapter extends ArrayAdapter<word> {
         iconView.setImageResource(currentword.getImageResourceId());
 
         return listItemView;
-//        return super.getView(position, convertView, parent);
     }
 }

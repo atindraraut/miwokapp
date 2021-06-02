@@ -12,9 +12,9 @@ import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
 
-public class WordAdapter extends ArrayAdapter<word> {
-    public WordAdapter(numbersActivity numbersActivity, ArrayList<word> numbersarray) {
-        super(numbersActivity,0,numbersarray);
+public class phrasesadapter extends ArrayAdapter<phrases> {
+    public phrasesadapter(phrasesActivity phrasesActivity, ArrayList<phrases> phrasesarray) {
+        super(phrasesActivity,0,phrasesarray);
     }
 
     @NonNull
@@ -26,27 +26,25 @@ public class WordAdapter extends ArrayAdapter<word> {
                     R.layout.list_item, parent, false);
         }
         // Get the {@link AndroidFlavor} object located at this position in the list
-        word currentword = (word) getItem(position);
+        phrases currentphrase = (phrases) getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID version_name
         TextView defaultTextView = (TextView) listItemView.findViewById(R.id.defaultlang);
         // Get the version name from the current AndroidFlavor object and
         // set this text on the name TextView
-        defaultTextView.setText(currentword.getdefault());
+        defaultTextView.setText(currentphrase.getdefault());
 
         // Find the TextView in the list_item.xml layout with the ID version_name
         TextView  miwokTextView= (TextView) listItemView.findViewById(R.id.miwoklang);
         // Get the version name from the current AndroidFlavor object and
         // set this text on the name TextView
-        miwokTextView.setText(currentword.getmiwok());
+        miwokTextView.setText(currentphrase.getmiwok());
 
         // Find the ImageView in the list_item.xml layout with the ID list_item_icon
         ImageView iconView = (ImageView) listItemView.findViewById(R.id.list_item_icon);
         // Get the image resource ID from the current AndroidFlavor object and
         // set the image to iconView
-        iconView.setImageResource(currentword.getImageResourceId());
-
+        iconView.setImageResource(currentphrase.getImageResourceId());
         return listItemView;
-//        return super.getView(position, convertView, parent);
     }
 }

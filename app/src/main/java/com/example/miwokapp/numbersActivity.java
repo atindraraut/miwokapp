@@ -3,12 +3,7 @@ package com.example.miwokapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.util.Log;
-import android.widget.ArrayAdapter;
-import android.widget.GridView;
-import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -17,20 +12,20 @@ public class numbersActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_numbers2);
+        setContentView(R.layout.word_list);
 
         ArrayList<word> numbersarray = new ArrayList<word>();
 
-        numbersarray.add(new word("one","lutti"));
-        numbersarray.add(new word("two","otiiko"));
-        numbersarray.add(new word("three","tolookosu"));
-        numbersarray.add(new word("four","oyyisa"));
-        numbersarray.add(new word("five","mssokka"));
-        numbersarray.add(new word("six","temmokka"));
-        numbersarray.add(new word("seven","kenekaku"));
-        numbersarray.add(new word("eight","kawinta"));
-        numbersarray.add(new word("nine","wo'e"));
-        numbersarray.add(new word("ten","na'aacha"));
+        numbersarray.add(new word("one","lutti",R.drawable.one));
+        numbersarray.add(new word("two","otiiko",R.drawable.two));
+        numbersarray.add(new word("three","tolookosu",R.drawable.three));
+        numbersarray.add(new word("four","oyyisa",R.drawable.four));
+        numbersarray.add(new word("five","mssokka",R.drawable.five));
+        numbersarray.add(new word("six","temmokka",R.drawable.six));
+        numbersarray.add(new word("seven","kenekaku",R.drawable.seven));
+        numbersarray.add(new word("eight","kawinta",R.drawable.eight));
+        numbersarray.add(new word("nine","wo'e",R.drawable.nine));
+        numbersarray.add(new word("ten","na'aacha",R.drawable.ten));
 
 //        numbersarray.add("one");
 //        numbersarray.add("two");
