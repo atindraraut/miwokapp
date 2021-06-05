@@ -16,16 +16,16 @@ public class numbersActivity extends AppCompatActivity {
 
         ArrayList<word> numbersarray = new ArrayList<word>();
 
-        numbersarray.add(new word("one","lutti",R.drawable.one));
-        numbersarray.add(new word("two","otiiko",R.drawable.two));
-        numbersarray.add(new word("three","tolookosu",R.drawable.three));
-        numbersarray.add(new word("four","oyyisa",R.drawable.four));
-        numbersarray.add(new word("five","mssokka",R.drawable.five));
-        numbersarray.add(new word("six","temmokka",R.drawable.six));
-        numbersarray.add(new word("seven","kenekaku",R.drawable.seven));
-        numbersarray.add(new word("eight","kawinta",R.drawable.eight));
-        numbersarray.add(new word("nine","wo'e",R.drawable.nine));
-        numbersarray.add(new word("ten","na'aacha",R.drawable.ten));
+        numbersarray.add(new word("one","lutti",R.drawable.number_one));
+        numbersarray.add(new word("two","otiiko",R.drawable.number_two));
+        numbersarray.add(new word("three","tolookosu",R.drawable.number_three));
+        numbersarray.add(new word("four","oyyisa",R.drawable.number_four));
+        numbersarray.add(new word("five","mssokka",R.drawable.number_five));
+        numbersarray.add(new word("six","temmokka",R.drawable.number_six));
+        numbersarray.add(new word("seven","kenekaku",R.drawable.number_seven));
+        numbersarray.add(new word("eight","kawinta",R.drawable.number_eight));
+        numbersarray.add(new word("nine","wo'e",R.drawable.number_nine));
+        numbersarray.add(new word("ten","na'aacha",R.drawable.number_ten));
 
 //        numbersarray.add("one");
 //        numbersarray.add("two");
