@@ -1,13 +1,13 @@
 package com.example.miwokapp;
 
-public class word {
+public class Word {
 
     private String mdefault;
     private String mmiwok;
     private int mImageResourceId;
 
 
-    public word(String udefault, String umiwok, int imageResourceId) {
+    public Word(String udefault, String umiwok, int imageResourceId) {
         mdefault = udefault;
         mmiwok = umiwok;
         mImageResourceId = imageResourceId;
