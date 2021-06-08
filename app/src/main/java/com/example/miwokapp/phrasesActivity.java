@@ -4,13 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.media.AudioManager;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class PhrasesActivity extends AppCompatActivity {
+public class phrasesActivity extends AppCompatActivity {
 
     /** Handles playback of all the sound files */
     private MediaPlayer mMediaPlayer;
@@ -125,7 +127,7 @@ public class PhrasesActivity extends AppCompatActivity {
 
                     // Create and setup the {@link MediaPlayer} for the audio resource associated
                     // with the current word
-                    mMediaPlayer = MediaPlayer.create(PhrasesActivity.this, word.getAudioResourceId());
+                    mMediaPlayer = MediaPlayer.create(phrasesActivity.this, word.getAudioResourceId());
 
                     // Start the audio file
                     mMediaPlayer.start();
